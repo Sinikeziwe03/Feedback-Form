@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/4d73b15581.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header><h1>Feedback Form</h1></header>
+
+    <h3>Tell us what you think</h3>
+    <form class="feedback-form">
+      <input type="text" placeholder="Full Name" class="name" required /><br />
+
+      <input type="text" placeholder="Email" class="email" required />
+      <br />
+      <input
+        type="text"
+        placeholder="Tell us what you think:"
+        name="message"
+        class="message"
+      />
+      <br />
+      <div class="rating">
+        <span onclick="gfg(1)" class="star"><i class="far fa-star" id="stars" > </i></span>
+        <span onclick="gfg(2)" class="star"><i class="far fa-star" id="stars"></i></span>
+        <span onclick="gfg(3)" class="star"><i class="far fa-star" id="stars"></i></span>
+        <span onclick="gfg(4)" class="star"><i class="far fa-star" id="stars"></i></span>
+        <span onclick="gfg(5)" class="star"><i class="far fa-star" id="stars"></i></span>
+        <h3 id="output">Rating is: 0/5</h3>
+      </div>
+    </form>
+    <button class="button">Submit</button>
+    <script src="script.js"></script>
+  </body>
+</html>
