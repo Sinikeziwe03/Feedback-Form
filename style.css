@@ -19,22 +19,26 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+label{
+  color: white;
+}
 
 .rating{
   display: flex;
   justify-content:space-evenly;
 }
 
-.starr{
+.star i{
 cursor: pointer;
 font-size: 2em;
-color: #f8d611ce;
-
-
+color: #e6e6e6;
+transition: color 0.2s ease;
+margin-bottom: 40px;
 }
-#output{
-  color:#f0f8ff;
-  text-align: center;
+
+.star i.active{
+color: #ff9c1a;
+
 }
 
 .button {
@@ -46,7 +50,6 @@ color: #f8d611ce;
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  display: block;
   margin-left: 10px;
   
 }
