@@ -13,8 +13,9 @@ stars.forEach((star, index2)=>{
 });
 });
 
-function submitNow() {
-  alert("Thank you"+ " " + "for submitting your rating😊");
+function submitNow(event) {
+  event.preventDefault
+  alert("Thank you for submitting your rating😊");
 }
 let submitNowButton = document.querySelector("button");
 submitNowButton.addEventListener("click", submitNow);

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback Form</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -23,6 +22,7 @@
         id="name"
         placeholder="Full Name"
         class="name"
+        name="name"
         required
       /><br />
 
@@ -32,17 +32,19 @@
         id="email"
         placeholder="Email"
         class="email"
+        name="email"
         required
       /><br />
 
       <label for="message">Message</label>
-      <input
+      <textarea
         type="text"
         id="message"
         placeholder="Tell us what you think:"
         name="message"
         class="message"
-      /><br />
+        rows="4"
+      ></textarea><br />
 
       <br />
       <div class="rating">
